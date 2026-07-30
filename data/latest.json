@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-29T23:53:54.645Z",
-  "date": "2026-07-30",
+  "generatedAt": "2026-07-30T23:53:54.092Z",
+  "date": "2026-07-31",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-07-29T23:53:54.645Z",
-  "lastScanAt": "2026-07-29T23:53:54.645Z",
+  "firstScanAt": "2026-07-30T23:53:54.092Z",
+  "lastScanAt": "2026-07-30T23:53:54.092Z",
   "newThisRun": 1,
   "summary": {
     "newRepos": 0,
@@ -14,21 +14,21 @@
   "changes": [
     {
       "type": "tracked-repo-updated",
-      "title": "modelcontextprotocol/servers",
-      "source": "https://github.com/modelcontextprotocol/servers",
-      "category": "Tracked Repo",
-      "detectedAt": "2026-07-29T23:53:54.645Z",
-      "detail": "Repository pushed date changed from 2026-07-26T03:16:32Z to 2026-07-29T23:09:46Z."
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-07-30T23:53:54.092Z",
+      "detail": "Repository pushed date changed from 2026-07-28T14:11:45Z to 2026-07-30T20:26:54Z."
     }
   ],
   "runChanges": [
     {
       "type": "tracked-repo-updated",
-      "title": "modelcontextprotocol/servers",
-      "source": "https://github.com/modelcontextprotocol/servers",
-      "category": "Tracked Repo",
-      "detectedAt": "2026-07-29T23:53:54.645Z",
-      "detail": "Repository pushed date changed from 2026-07-26T03:16:32Z to 2026-07-29T23:09:46Z."
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-07-30T23:53:54.092Z",
+      "detail": "Repository pushed date changed from 2026-07-28T14:11:45Z to 2026-07-30T20:26:54Z."
     }
   ],
   "scanErrors": [],
@@ -342,9 +342,9 @@
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
       "pushedAt": "2026-07-29T23:09:46Z",
-      "updatedAt": "2026-07-29T23:49:36Z",
-      "stars": 89029,
-      "forks": 11328,
+      "updatedAt": "2026-07-30T22:15:36Z",
+      "stars": 89060,
+      "forks": 11334,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -400,10 +400,10 @@
       "owner": "a2aproject",
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
-      "pushedAt": "2026-07-28T14:11:45Z",
-      "updatedAt": "2026-07-29T19:40:04Z",
-      "stars": 25094,
-      "forks": 2534,
+      "pushedAt": "2026-07-30T20:26:54Z",
+      "updatedAt": "2026-07-30T21:10:11Z",
+      "stars": 25104,
+      "forks": 2537,
       "language": "Shell",
       "topics": [
         "a2a",
@@ -475,8 +475,8 @@
           "owner": "api-evangelist",
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-07-29T10:54:12Z",
-          "updatedAt": "2026-07-29T10:55:10Z",
+          "pushedAt": "2026-07-30T03:47:12Z",
+          "updatedAt": "2026-07-30T03:47:26Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -547,8 +547,8 @@
           "owner": "api-evangelist",
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-07-29T10:54:12Z",
-          "updatedAt": "2026-07-29T10:55:10Z",
+          "pushedAt": "2026-07-30T03:47:12Z",
+          "updatedAt": "2026-07-30T03:47:26Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
