@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-02T23:50:46.001Z",
-  "date": "2026-08-03",
+  "generatedAt": "2026-08-03T23:59:50.505Z",
+  "date": "2026-08-04",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-08-02T23:50:46.001Z",
-  "lastScanAt": "2026-08-02T23:50:46.001Z",
+  "firstScanAt": "2026-08-03T23:59:50.505Z",
+  "lastScanAt": "2026-08-03T23:59:50.505Z",
   "newThisRun": 1,
   "summary": {
     "newRepos": 0,
@@ -17,8 +17,8 @@
       "title": "modelcontextprotocol/servers",
       "source": "https://github.com/modelcontextprotocol/servers",
       "category": "Tracked Repo",
-      "detectedAt": "2026-08-02T23:50:46.001Z",
-      "detail": "Repository pushed date changed from 2026-08-01T22:22:31Z to 2026-08-02T01:52:52Z."
+      "detectedAt": "2026-08-03T23:59:50.505Z",
+      "detail": "Repository pushed date changed from 2026-08-02T01:52:52Z to 2026-08-03T18:36:22Z."
     }
   ],
   "runChanges": [
@@ -27,8 +27,8 @@
       "title": "modelcontextprotocol/servers",
       "source": "https://github.com/modelcontextprotocol/servers",
       "category": "Tracked Repo",
-      "detectedAt": "2026-08-02T23:50:46.001Z",
-      "detail": "Repository pushed date changed from 2026-08-01T22:22:31Z to 2026-08-02T01:52:52Z."
+      "detectedAt": "2026-08-03T23:59:50.505Z",
+      "detail": "Repository pushed date changed from 2026-08-02T01:52:52Z to 2026-08-03T18:36:22Z."
     }
   ],
   "scanErrors": [],
@@ -341,10 +341,10 @@
       "owner": "modelcontextprotocol",
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
-      "pushedAt": "2026-08-02T01:52:52Z",
-      "updatedAt": "2026-08-02T23:44:44Z",
-      "stars": 89141,
-      "forks": 11353,
+      "pushedAt": "2026-08-03T18:36:22Z",
+      "updatedAt": "2026-08-03T23:29:09Z",
+      "stars": 89163,
+      "forks": 11369,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -401,9 +401,9 @@
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
       "pushedAt": "2026-08-01T00:08:07Z",
-      "updatedAt": "2026-08-02T23:30:26Z",
-      "stars": 25152,
-      "forks": 2544,
+      "updatedAt": "2026-08-03T21:50:45Z",
+      "stars": 25169,
+      "forks": 2548,
       "language": "Shell",
       "topics": [
         "a2a",
@@ -476,7 +476,7 @@
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
           "pushedAt": "2026-08-02T15:01:52Z",
-          "updatedAt": "2026-08-02T15:01:59Z",
+          "updatedAt": "2026-08-03T14:53:20Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -487,7 +487,6 @@
             "communication",
             "enterprise",
             "messaging",
-            "naftiko",
             "video-conferencing"
           ],
           "categories": [
@@ -548,7 +547,7 @@
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
           "pushedAt": "2026-08-02T15:01:52Z",
-          "updatedAt": "2026-08-02T15:01:59Z",
+          "updatedAt": "2026-08-03T14:53:20Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -559,7 +558,6 @@
             "communication",
             "enterprise",
             "messaging",
-            "naftiko",
             "video-conferencing"
           ],
           "categories": [
