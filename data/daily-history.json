@@ -977,6 +977,30 @@
           "detail": "Repository pushed date changed from 2026-08-02T01:52:52Z to 2026-08-03T18:36:22Z."
         }
       ]
+    },
+    "2026-08-05": {
+      "date": "2026-08-05",
+      "firstScanAt": "2026-08-04T23:55:26.612Z",
+      "lastScanAt": "2026-08-04T23:55:26.612Z",
+      "scanCount": 1,
+      "changes": [
+        {
+          "type": "tracked-repo-updated",
+          "title": "modelcontextprotocol/servers",
+          "source": "https://github.com/modelcontextprotocol/servers",
+          "category": "Tracked Repo",
+          "detectedAt": "2026-08-04T23:55:26.612Z",
+          "detail": "Repository pushed date changed from 2026-08-03T18:36:22Z to 2026-08-04T23:54:25Z."
+        },
+        {
+          "type": "tracked-repo-updated",
+          "title": "a2aproject/A2A",
+          "source": "https://github.com/a2aproject/A2A",
+          "category": "MCP",
+          "detectedAt": "2026-08-04T23:55:26.612Z",
+          "detail": "Repository pushed date changed from 2026-08-01T00:08:07Z to 2026-08-04T15:50:49Z."
+        }
+      ]
     }
   }
 }

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-03T23:59:50.505Z",
-  "date": "2026-08-04",
+  "generatedAt": "2026-08-04T23:55:26.612Z",
+  "date": "2026-08-05",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-08-03T23:59:50.505Z",
-  "lastScanAt": "2026-08-03T23:59:50.505Z",
-  "newThisRun": 1,
+  "firstScanAt": "2026-08-04T23:55:26.612Z",
+  "lastScanAt": "2026-08-04T23:55:26.612Z",
+  "newThisRun": 2,
   "summary": {
     "newRepos": 0,
-    "updatedTrackedRepos": 1,
+    "updatedTrackedRepos": 2,
     "newDiscoveryItems": 0
   },
   "changes": [
@@ -17,8 +17,16 @@
       "title": "modelcontextprotocol/servers",
       "source": "https://github.com/modelcontextprotocol/servers",
       "category": "Tracked Repo",
-      "detectedAt": "2026-08-03T23:59:50.505Z",
-      "detail": "Repository pushed date changed from 2026-08-02T01:52:52Z to 2026-08-03T18:36:22Z."
+      "detectedAt": "2026-08-04T23:55:26.612Z",
+      "detail": "Repository pushed date changed from 2026-08-03T18:36:22Z to 2026-08-04T23:54:25Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-08-04T23:55:26.612Z",
+      "detail": "Repository pushed date changed from 2026-08-01T00:08:07Z to 2026-08-04T15:50:49Z."
     }
   ],
   "runChanges": [
@@ -27,8 +35,16 @@
       "title": "modelcontextprotocol/servers",
       "source": "https://github.com/modelcontextprotocol/servers",
       "category": "Tracked Repo",
-      "detectedAt": "2026-08-03T23:59:50.505Z",
-      "detail": "Repository pushed date changed from 2026-08-02T01:52:52Z to 2026-08-03T18:36:22Z."
+      "detectedAt": "2026-08-04T23:55:26.612Z",
+      "detail": "Repository pushed date changed from 2026-08-03T18:36:22Z to 2026-08-04T23:54:25Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-08-04T23:55:26.612Z",
+      "detail": "Repository pushed date changed from 2026-08-01T00:08:07Z to 2026-08-04T15:50:49Z."
     }
   ],
   "scanErrors": [],
@@ -341,10 +357,10 @@
       "owner": "modelcontextprotocol",
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
-      "pushedAt": "2026-08-03T18:36:22Z",
-      "updatedAt": "2026-08-03T23:29:09Z",
-      "stars": 89163,
-      "forks": 11369,
+      "pushedAt": "2026-08-04T23:54:25Z",
+      "updatedAt": "2026-08-04T21:46:44Z",
+      "stars": 89206,
+      "forks": 11382,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -400,10 +416,10 @@
       "owner": "a2aproject",
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
-      "pushedAt": "2026-08-01T00:08:07Z",
-      "updatedAt": "2026-08-03T21:50:45Z",
-      "stars": 25169,
-      "forks": 2548,
+      "pushedAt": "2026-08-04T15:50:49Z",
+      "updatedAt": "2026-08-04T21:55:09Z",
+      "stars": 25186,
+      "forks": 2550,
       "language": "Shell",
       "topics": [
         "a2a",
@@ -475,8 +491,8 @@
           "owner": "api-evangelist",
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-08-02T15:01:52Z",
-          "updatedAt": "2026-08-03T14:53:20Z",
+          "pushedAt": "2026-08-04T01:47:11Z",
+          "updatedAt": "2026-08-04T01:47:19Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -495,19 +511,21 @@
           ],
           "readme": {
             "url": "https://github.com/api-evangelist/webex/blob/main/README.md",
-            "excerpt": "Webex (webex) Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks. Webex supports OAuth 2.0 authentication and provides separate API surfaces for messaging, video conferencing, cloud calling, admin management, and more. APIs.json: https://raw.githubusercontent.com/api-evangelist/webex/refs/heads/main/apis.yml Scope - Type: Index - Position: Consumer - Access: 3rd-Party Tags - Calling - Collaboration - Communication - Enterprise - Messaging - Video Conferencing Ti...",
+            "excerpt": "Webex (webex) <!-- API-EVANGELIST-PROVENANCE:BEGIN -- About this repository This is not our API. This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist. API Evangelist does not operate, host, resell, or support this company's APIs, and is not affiliated with or endorsed by the company unless stated on the profile. Where the information came from. Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json , llms.txt...",
             "highlights": [
-              "Webex (webex) Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows.",
-              "The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
-              "Webex supports OAuth 2.0 authentication and provides separate API surfaces for messaging, video conferencing, cloud calling, admin management, and more.",
-              "APIs.json: https://raw.githubusercontent.com/api-evangelist/webex/refs/heads/main/apis.yml Scope - Type: Index - Position: Consumer - Access: 3rd-Party Tags - Calling - Collaboration - Communication - Enterprise - Messaging - Video Conferencing Timestamps - Created: 2025-02-06 - Modified: 2026-05-19 APIs Webex Messaging Webex Messaging API for creating and managing rooms, messages, attachments, teams, memberships, and real-time collaboration."
+              "Webex (webex) <!-- API-EVANGELIST-PROVENANCE:BEGIN -- About this repository This is not our API.",
+              "This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist.",
+              "API Evangelist does not operate, host, resell, or support this company's APIs, and is not affiliated with or endorsed by the company unless stated on the profile.",
+              "Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json , llms.txt and similar), its public repositories, and its public status, pricing and changelog pages."
             ],
             "sections": [
               {
                 "title": "Webex (webex)",
                 "bullets": [
-                  "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks. Webex supports OAuth 2.0 authentication and provides separate API surfaces for messaging, video conferencing, cloud calling, admin management, and more.",
-                  "APIs.json: https://raw.githubusercontent.com/api-evangelist/webex/refs/heads/main/apis.yml"
+                  "<!-- API-EVANGELIST-PROVENANCE:BEGIN -->",
+                  "> This is not our API. This repository is an independent, third-party profile of a company's",
+                  "> publicly available API surface, maintained by API Evangelist.",
+                  "> API Evangelist does not operate, host, resell, or support this company's APIs, and is not"
                 ]
               },
               {
@@ -546,8 +564,8 @@
           "owner": "api-evangelist",
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-08-02T15:01:52Z",
-          "updatedAt": "2026-08-03T14:53:20Z",
+          "pushedAt": "2026-08-04T01:47:11Z",
+          "updatedAt": "2026-08-04T01:47:19Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -566,19 +584,21 @@
           ],
           "readme": {
             "url": "https://github.com/api-evangelist/webex/blob/main/README.md",
-            "excerpt": "Webex (webex) Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks. Webex supports OAuth 2.0 authentication and provides separate API surfaces for messaging, video conferencing, cloud calling, admin management, and more. APIs.json: https://raw.githubusercontent.com/api-evangelist/webex/refs/heads/main/apis.yml Scope - Type: Index - Position: Consumer - Access: 3rd-Party Tags - Calling - Collaboration - Communication - Enterprise - Messaging - Video Conferencing Ti...",
+            "excerpt": "Webex (webex) <!-- API-EVANGELIST-PROVENANCE:BEGIN -- About this repository This is not our API. This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist. API Evangelist does not operate, host, resell, or support this company's APIs, and is not affiliated with or endorsed by the company unless stated on the profile. Where the information came from. Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json , llms.txt...",
             "highlights": [
-              "Webex (webex) Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows.",
-              "The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
-              "Webex supports OAuth 2.0 authentication and provides separate API surfaces for messaging, video conferencing, cloud calling, admin management, and more.",
-              "APIs.json: https://raw.githubusercontent.com/api-evangelist/webex/refs/heads/main/apis.yml Scope - Type: Index - Position: Consumer - Access: 3rd-Party Tags - Calling - Collaboration - Communication - Enterprise - Messaging - Video Conferencing Timestamps - Created: 2025-02-06 - Modified: 2026-05-19 APIs Webex Messaging Webex Messaging API for creating and managing rooms, messages, attachments, teams, memberships, and real-time collaboration."
+              "Webex (webex) <!-- API-EVANGELIST-PROVENANCE:BEGIN -- About this repository This is not our API.",
+              "This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist.",
+              "API Evangelist does not operate, host, resell, or support this company's APIs, and is not affiliated with or endorsed by the company unless stated on the profile.",
+              "Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json , llms.txt and similar), its public repositories, and its public status, pricing and changelog pages."
             ],
             "sections": [
               {
                 "title": "Webex (webex)",
                 "bullets": [
-                  "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks. Webex supports OAuth 2.0 authentication and provides separate API surfaces for messaging, video conferencing, cloud calling, admin management, and more.",
-                  "APIs.json: https://raw.githubusercontent.com/api-evangelist/webex/refs/heads/main/apis.yml"
+                  "<!-- API-EVANGELIST-PROVENANCE:BEGIN -->",
+                  "> This is not our API. This repository is an independent, third-party profile of a company's",
+                  "> publicly available API surface, maintained by API Evangelist.",
+                  "> API Evangelist does not operate, host, resell, or support this company's APIs, and is not"
                 ]
               },
               {
