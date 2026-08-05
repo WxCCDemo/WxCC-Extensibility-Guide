@@ -1001,6 +1001,22 @@
           "detail": "Repository pushed date changed from 2026-08-01T00:08:07Z to 2026-08-04T15:50:49Z."
         }
       ]
+    },
+    "2026-08-06": {
+      "date": "2026-08-06",
+      "firstScanAt": "2026-08-05T23:50:13.007Z",
+      "lastScanAt": "2026-08-05T23:50:13.007Z",
+      "scanCount": 1,
+      "changes": [
+        {
+          "type": "tracked-repo-updated",
+          "title": "modelcontextprotocol/servers",
+          "source": "https://github.com/modelcontextprotocol/servers",
+          "category": "Tracked Repo",
+          "detectedAt": "2026-08-05T23:50:13.007Z",
+          "detail": "Repository pushed date changed from 2026-08-04T23:54:25Z to 2026-08-05T13:50:29Z."
+        }
+      ]
     }
   }
 }
