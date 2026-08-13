@@ -1,1 +1,1455 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions &amp; Samples — WxCC Dev Corner</title>
+  <link rel="stylesheet" href="css/styles.css?v=responsive-1" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark">Wx</div>
+      <div class="nav-logo-text">
+        <span>WxCC Dev Corner</span>
+        <span>Developer Portal</span>
+      </div>
+    </a>
+    <div class="nav-spacer"></div>
+    <ul class="nav-links">
+      <li><a href="samples.html" class="active">&#x1F9E9; Samples</a></li>
+      <li><a href="faq.html">&#x2753; FAQ</a></li>
+    </ul>
+    <a href="getting-started.html" class="nav-cta">Start Building &#x2192;</a>
+    <button class="nav-mobile-btn" aria-label="Open menu">&#x2630;</button>
+  </nav>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" aria-label="Close">&#x2715;</button>
+    <div class="mobile-nav-section">Guide</div>
+    <a href="getting-started.html">&#x1F511; Auth &amp; Setup</a>
+    <a href="rest-apis.html">&#x1F50C; REST APIs</a>
+    <a href="webhooks.html">&#x1F4E1; Webhooks</a>
+    <a href="desktop-sdk.html">&#x1F5A5;&#xFE0F; Desktop SDK</a>
+    <a href="flow-designer.html">&#x1F500; Flow Designer</a>
+    <a href="reporting.html">&#x1F4CA; Reporting</a>
+    <div class="mobile-nav-section">Resources</div>
+    <a href="samples.html" class="active">&#x1F9E9; Samples</a>
+    <a href="faq.html">&#x2753; FAQ</a>
+    <a href="index.html">&#x1F5FA;&#xFE0F; Overview</a>
+  </div>
+</div>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">&#x203A;</span>
+      <span>Samples</span>
+    </nav>
+    <div class="page-hero-content">
+      <div class="page-hero-icon">&#x1F9E9;</div>
+      <div class="page-hero-text">
+        <h1>Solutions &amp; Samples</h1>
+        <p class="subtitle">End-to-end implementation playbooks — framed by business outcome first, then the technical pattern. Use these as demo paths, proof-of-concept starters, or learning exercises.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-layout">
+  <aside class="toc-sidebar">
+    <div class="toc-title">On This Page</div>
+    <ul class="toc-list">
+      <li><a href="#gallery"><span class="toc-icon">🗂️</span> Sample Gallery</a></li>
+      <li><a href="#auth-playbook"><span class="toc-icon">🔑</span> Auth Foundation</a></li>
+      <li><a href="#config-playbook"><span class="toc-icon">⚙️</span> Config Automation</a></li>
+      <li><a href="#webhook-playbook"><span class="toc-icon">📡</span> Webhook Listener</a></li>
+      <li><a href="#desktop-playbook"><span class="toc-icon">🖥️</span> Agent Experience</a></li>
+      <li><a href="#reporting-playbook"><span class="toc-icon">📊</span> Reporting Dashboard</a></li>
+      <li><a href="#provider-playbook"><span class="toc-icon">🔀</span> Flow HTTP Lookup</a></li>
+      <li><a href="#desktop-api-playbook"><span class="toc-icon">🎧</span> Desktop APIs</a></li>
+      <li><a href="#callback-playbook"><span class="toc-icon">📞</span> Callback Automation</a></li>
+      <li><a href="#recording-playbook"><span class="toc-icon">🎙️</span> Recording Workflow</a></li>
+      <li><a href="#powerbi-playbook"><span class="toc-icon">📈</span> Power BI Connector</a></li>
+      <li><a href="#click-to-call-playbook"><span class="toc-icon">☎️</span> Click to Call</a></li>
+      <li><a href="#audio-widget-playbook"><span class="toc-icon">🔊</span> Audio Widget</a></li>
+      <li><a href="#flow-template-playbook"><span class="toc-icon">🧩</span> Flow Templates</a></li>
+      <li><a href="#ai-provider-playbook"><span class="toc-icon">🤖</span> AI Provider</a></li>
+    </ul>
+  </aside>
+
+  <article class="content-main">
+
+    <!-- Business Journey -->
+    <div class="content-section">
+      <div class="section-header"><span class="section-icon">🧭</span><h2>Business Journey</h2></div>
+      <div class="diagram-wrap">
+        <div class="mermaid">
+flowchart LR
+  A["🔑 Connect\nSecurely\nAuth Foundation"] --> B
+  B["⚙️ Automate\nOperations\nConfig APIs"] --> C
+  C["📡 Respond to\nMoments\nWebhooks"] --> D
+  D["🖥️ Elevate\nAgent UX\nDesktop SDK"] --> E
+  E["📊 Measure &amp;\nImprove\nReporting"]
+
+  style A fill:#00476B,color:#fff
+  style B fill:#6366f1,color:#fff
+  style C fill:#818cf8,color:#fff
+  style D fill:#f59e0b,color:#000
+  style E fill:#10b981,color:#fff
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample Gallery -->
+    <div id="gallery" class="content-section">
+      <div class="section-header"><span class="section-icon">🗂️</span><h2>Sample Gallery</h2></div>
+      <div class="callout callout-info samples-refresh-bar" id="samplesRefreshBar" style="align-items:center;">
+        <span class="callout-icon">🛰️</span>
+        <div class="callout-body">
+          <strong id="samplesRefreshStatus">Checking latest scan…</strong>
+          <p id="samplesRefreshDetail">This gallery is generated from a scan of the WebexSamples GitHub org.</p>
+        </div>
+        <button type="button" id="samplesRefreshBtn" class="copy-btn" style="flex-shrink:0;">🔄 Refresh</button>
+      </div>
+      <div class="sample-cards-grid">
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-beginner">Beginner</span><span class="tag">Auth</span></div>
+          <h3>Auth Foundation</h3>
+          <p>Get an access token and make your first API call. Proves secure access, understands scopes, creates a repeatable starting point.</p>
+          <ul class="sample-card-bullets">
+            <li>OAuth 2.0 Service App setup</li>
+            <li>Token caching and refresh</li>
+            <li>First successful API call</li>
+          </ul>
+          <a href="#auth-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">REST APIs</span></div>
+          <h3>Config Automation</h3>
+          <p>Manage configuration and reduce manual admin work. Shows how to read, extract, and automate contact center setup.</p>
+          <ul class="sample-card-bullets">
+            <li>Read queues, teams, entry points</li>
+            <li>Export configuration to CSV</li>
+            <li>Bulk-create teams and agents</li>
+          </ul>
+          <a href="#config-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Webhooks</span></div>
+          <h3>Real-time Action</h3>
+          <p>Send notifications when important events occur. Demonstrates event-driven automation for supervisors and downstream systems.</p>
+          <ul class="sample-card-bullets">
+            <li>Register and receive webhooks</li>
+            <li>HMAC signature verification</li>
+            <li>CRM update on task:ended</li>
+          </ul>
+          <a href="#webhook-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Desktop SDK</span></div>
+          <h3>Agent Experience</h3>
+          <p>Build a custom desktop widget for agents. Brings CRM context, AI suggestions, and call controls into the agent workspace.</p>
+          <ul class="sample-card-bullets">
+            <li>SDK init and iFrame setup</li>
+            <li>Screen pop on incoming call</li>
+            <li>Read and update call variables</li>
+          </ul>
+          <a href="#desktop-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-advanced">Advanced</span><span class="tag">Reporting</span></div>
+          <h3>Business Insight</h3>
+          <p>Build dashboards and reporting connectors. Turns operational data into wallboards, exports, and BI analytics.</p>
+          <ul class="sample-card-bullets">
+            <li>Real-time queue wallboard</li>
+            <li>Historical CDR export to BigQuery</li>
+            <li>Power BI connector pattern</li>
+          </ul>
+          <a href="#reporting-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Flow Designer</span></div>
+          <h3>Intelligent Routing</h3>
+          <p>Use flow data to personalize routing. Connects IVR, HTTP lookups, variables, and routing decisions for smarter journeys.</p>
+          <ul class="sample-card-bullets">
+            <li>HTTP node calling your CRM API</li>
+            <li>Tier-based queue routing</li>
+            <li>AI intent prediction mid-flow</li>
+          </ul>
+          <a href="#provider-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-advanced">Advanced</span><span class="tag">Desktop APIs</span></div>
+          <h3>Agent Control API</h3>
+          <p>Build supervisor or automation tools that listen to agent/contact events and safely perform supported desktop actions.</p>
+          <ul class="sample-card-bullets">
+            <li>Desktop REST APIs</li>
+            <li>WebSocket notifications</li>
+            <li>Agent/contact state monitoring</li>
+          </ul>
+          <a href="#desktop-api-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Callback</span></div>
+          <h3>Callback Automation</h3>
+          <p>Create callback requests from a web form, CRM workflow, or service app so customers can avoid waiting in queue.</p>
+          <ul class="sample-card-bullets">
+            <li>Customer callback request</li>
+            <li>Queue and schedule mapping</li>
+            <li>Status handoff to CRM</li>
+          </ul>
+          <a href="#callback-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-advanced">Advanced</span><span class="tag">Recordings</span></div>
+          <h3>Recording Workflow</h3>
+          <p>React to recording availability, download metadata, and move interaction records into compliance or QA systems.</p>
+          <ul class="sample-card-bullets">
+            <li>Recording event trigger</li>
+            <li>Secure file handoff</li>
+            <li>QA/compliance archive</li>
+          </ul>
+          <a href="#recording-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-advanced">Advanced</span><span class="tag">Power BI</span></div>
+          <h3>Power BI Connector</h3>
+          <p>Package GraphQL/search reporting data into a reusable business intelligence connector for leadership dashboards.</p>
+          <ul class="sample-card-bullets">
+            <li>GraphQL powered reporting API</li>
+            <li>Connector refresh workflow</li>
+            <li>Dashboard dataset mapping</li>
+          </ul>
+          <a href="#powerbi-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Click to Call</span></div>
+          <h3>Click to Call</h3>
+          <p>Add dial buttons, consult, transfer, hold, pause, and resume controls inside the agent desktop experience.</p>
+          <ul class="sample-card-bullets">
+            <li>Address book click-to-dial</li>
+            <li>Desktop JS SDK call controls</li>
+            <li>CRM contact action buttons</li>
+          </ul>
+          <a href="#click-to-call-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Audio</span></div>
+          <h3>Audio Widget</h3>
+          <p>Expose audio or recording context directly in the agent desktop using a custom widget and desktop layout.</p>
+          <ul class="sample-card-bullets">
+            <li>Audio panel in desktop</li>
+            <li>Recording context display</li>
+            <li>Widget layout sample</li>
+          </ul>
+          <a href="#audio-widget-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-intermediate">Intermediate</span><span class="tag">Flows</span></div>
+          <h3>Flow Templates</h3>
+          <p>Use ready-made flow patterns as starting points for IVR, routing, callback, lookup, and escalation journeys.</p>
+          <ul class="sample-card-bullets">
+            <li>Reusable flow templates</li>
+            <li>Variable mapping checklist</li>
+            <li>Import and adapt workflow</li>
+          </ul>
+          <a href="#flow-template-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+        <div class="sample-card">
+          <div class="sample-card-meta"><span class="sample-card-level level-advanced">Advanced</span><span class="tag">AI Provider</span></div>
+          <h3>AI Provider Integration</h3>
+          <p>Connect virtual agents, real-time transcripts, and media services into WxCC flows using provider samples.</p>
+          <ul class="sample-card-bullets">
+            <li>BYoVA provider pattern</li>
+            <li>Media forking simulator</li>
+            <li>Runtime auth and events</li>
+          </ul>
+          <a href="#ai-provider-playbook" class="sample-card-link">View Playbook →</a>
+        </div>
+
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Auth Playbook -->
+    <div id="auth-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🔑</span>
+          <div>
+            <span class="sample-card-level level-beginner">Beginner</span>
+            <h3>Auth Foundation — Secure API Access</h3>
+          </div>
+        </div>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Developer / App] -- OAuth --> B[Webex Identity]
+  B -- Token --> C[WxCC APIs]
+  C -- JSON response --> A
+  style B fill:#00476B,color:#fff
+  style C fill:#6366f1,color:#fff
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Gives teams confidence that integrations authenticate safely and retrieve contact center data with the right scopes.</p>
+        <h4>What this sample teaches</h4>
+        <ul>
+          <li>Create an integration or service-app access pattern at developer.webex.com</li>
+          <li>Request scopes for config, people lookup, and reporting use cases</li>
+          <li>Call task, agent, queue, or site endpoints with a Bearer token</li>
+          <li>Implement token refresh / caching for longer-running production integrations</li>
+        </ul>
+        <h4>Run / adapt this sample</h4>
+        <ol class="steps">
+          <li class="step"><div class="step-content"><h4>Configure environment</h4><p>Set <code>WXCC_TOKEN</code> (or client credentials) and <code>WXCC_ORG_ID</code> as environment variables.</p></div></li>
+          <li class="step"><div class="step-content"><h4>Call a safe read endpoint</h4><p>Validate token, org access, and scopes with the agents or queues endpoint first.</p></div></li>
+          <li class="step"><div class="step-content"><h4>Move to Service App</h4><p>Replace personal token with the service-app token cache pattern for production use.</p></div></li>
+        </ol>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Postman Request — First WxCC API Call</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>GET https://webexapis.com/v1/contactCenter/agents?orgId={{orgId}}&amp;max=5
+
+Headers
+Authorization: Bearer {{access_token}}
+Accept: application/json</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">200 OK Response</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "items": [
+    {
+      "id": "agent-001",
+      "name": "Ava Chen",
+      "agentState": "Available",
+      "teamName": "Care Team"
+    }
+  ]
+}</code></pre></div>
+        <div class="callout callout-success" style="margin-top:var(--space-md);">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            <strong>Expected Result</strong>
+            <p>Token accepted → 200 OK → Agent list returned with name and state. Now you have a working foundation for every other integration.</p>
+          </div>
+        </div>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/app-auth-sample" target="_blank" rel="noopener">App auth sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/token-management-samples" target="_blank" rel="noopener">Token management samples</a></li>
+          <li><a href="getting-started.html">Authentication &amp; setup guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Webhook Playbook -->
+    <div id="webhook-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">📡</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Real-time Action — Webhook Listener</h3>
+          </div>
+        </div>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[WxCC Event] -- HTTPS POST --> B[Webhook Listener]
+  B -- Verify HMAC --> C{Valid?}
+  C -- Yes --> D[CRM / Alert / Email]
+  C -- No --> E[Reject 401]
+  style D fill:#10b981,color:#fff
+  style E fill:#f43f5e,color:#fff
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Lets teams respond to customer moments immediately — email alerts, CRM updates, compliance logs, recording workflows.</p>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Create webhook subscription for the exact event types your workflow needs.</li>
+          <li>Expose an HTTPS endpoint, using ngrok only for local development.</li>
+          <li>Verify the signature before trusting the payload.</li>
+          <li>Return <code>200 OK</code> quickly, then process the event asynchronously.</li>
+          <li>Store event IDs to avoid duplicate processing during retries.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Webhook Delivery — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://your-domain.example.com/webhooks/wxcc
+
+Headers
+Content-Type: application/json
+X-Spark-Signature: {{hmac_signature}}
+X-Webhook-Event: task:ended
+
+Body
+{
+  "id": "evt_12345",
+  "resource": "task",
+  "event": "task:ended",
+  "data": {
+    "taskId": "task-abc",
+    "agentId": "agent-001",
+    "queueId": "sales-queue"
+  }
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">JSON</span><span class="code-label">Event Processing Shape</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "eventId": "evt_12345",
+  "resource": "task",
+  "eventType": "task:ended",
+  "data": {
+    "taskId": "task-abc",
+    "queueId": "sales-queue",
+    "agentId": "agent-001",
+    "ani": "+14155550100",
+    "wrapupCode": "Resolved"
+  }
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>Listener logs <code>signature verified</code>, <code>event queued</code>, and <code>crm updated</code>.</li>
+          <li>Supervisor receives alert only for selected event types.</li>
+          <li>Duplicate event IDs are ignored rather than creating repeated CRM notes.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/webhook-email-notify-sample" target="_blank" rel="noopener">Webhook email notify sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/call-recording-samples" target="_blank" rel="noopener">Call recording samples</a></li>
+          <li><a href="webhooks.html">Webhook guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Desktop Playbook -->
+    <div id="desktop-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🖥️</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Agent Experience — Screen Pop Widget</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Improves agent productivity — customer context visible before the agent even answers, zero tab switching.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Incoming Contact] --> B[Agent Desktop]
+  B --> C[Custom Widget iFrame]
+  C --> D[Desktop JS SDK Events]
+  C --> E[CRM Lookup]
+  E --> F[Customer Context Panel]
+  style C fill:#00476B,color:#fff
+  style F fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Host the widget on HTTPS and register the widget URL in desktop layout JSON.</li>
+          <li>Initialize the Desktop JS SDK and subscribe to contact lifecycle events.</li>
+          <li>Use ANI, DNIS, or call variables to look up CRM context.</li>
+          <li>Write disposition notes or outcome fields back after contact end.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Agent Context Lookup — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://crm.example.com/api/customer-lookup
+
+Headers
+Content-Type: application/json
+Authorization: Bearer {{crm_access_token}}
+
+Body
+{
+  "eventType": "AgentContactOffered",
+  "callerId": "{{ani}}",
+  "interactionId": "{{interactionId}}",
+  "agentId": "{{agentId}}"
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Customer Context Response</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "matched": true,
+  "customerId": "crm-1042",
+  "name": "Ava Chen",
+  "tier": "Gold",
+  "openCases": 2,
+  "nextBestAction": "Offer priority callback"
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">JSON</span><span class="code-label">Desktop Layout Registration</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "widgets": {
+    "crmContext": {
+      "comp": "md-tabs",
+      "attributes": {
+        "slot": "WIDGET",
+        "children": [{
+          "comp": "iframe",
+          "attributes": {
+            "src": "https://your-app.example.com/wxcc-widget",
+            "title": "CRM Context"
+          }
+        }]
+      }
+    }
+  }
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>When a call is offered, the widget shows customer name, tier, open cases, and suggested next action.</li>
+          <li>When the contact ends, the widget clears context and optionally posts wrap-up data to CRM.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/desktop-js-sdk-sample" target="_blank" rel="noopener">Desktop JS SDK sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/addressbook-widget-sample" target="_blank" rel="noopener">Address book widget sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/desktop-js-sdk-callcontrol-sample" target="_blank" rel="noopener">Call control widget sample</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Reporting Playbook -->
+    <div id="reporting-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">📊</span>
+          <div>
+            <span class="sample-card-level level-advanced">Advanced</span>
+            <h3>Business Insight — Live Wallboard</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Turns contact center activity into measurable insight for supervisors and leaders in real time.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[GraphQL Query] --> B[Reporting Service]
+  B --> C[Metric Normalizer]
+  C --> D[Live Wallboard]
+  C --> E[Power BI / Data Lake]
+  style D fill:#10b981,color:#fff
+  style E fill:#818cf8,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Start with one queue or team before building a global dashboard.</li>
+          <li>Normalize API responses into a stable metric model used by every widget.</li>
+          <li>Refresh live wallboards on a controlled interval and cache historical exports.</li>
+          <li>Separate supervisor wallboards from scheduled BI exports.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">GraphQL Wallboard Request — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://webexapis.com/v1/contactCenter/analytics/graphql
+
+Headers
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+Body
+{
+  "query": "query QueueWallboard($queueId: ID!) { queue(id: $queueId) { name contactsInQueue agentsAvailable serviceLevelPercentage longestWaitSeconds } }",
+  "variables": {
+    "queueId": "{{queueId}}"
+  }
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Wallboard Response</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "data": {
+    "queue": {
+      "name": "Care Queue",
+      "contactsInQueue": 14,
+      "agentsAvailable": 8,
+      "serviceLevelPercentage": 87.4,
+      "longestWaitSeconds": 92
+    }
+  }
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>Supervisor wallboard shows contacts waiting, agents available, SLA, and longest wait.</li>
+          <li>Historical export includes enough fields for BI trend analysis and quality review.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/graphql-sample" target="_blank" rel="noopener">GraphQL sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/graphql-wallboard-sample" target="_blank" rel="noopener">GraphQL wallboard sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/graphql-powerbi-sample" target="_blank" rel="noopener">GraphQL Power BI sample</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Provider / Flow Playbook -->
+    <div id="provider-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🔀</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Intelligent Routing — Flow HTTP Lookup</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Smarter routing and shorter resolution paths — Gold customers skip the queue, standard callers get AI-predicted routing.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Flow HTTP Request Node] --> B[Lookup API]
+  B --> C[CRM / DB]
+  C --> B
+  B --> D[JSON Response]
+  D --> E[Flow Variables]
+  E --> F{Tier / Intent}
+  F --> G[Priority Queue]
+  F --> H[Standard Queue]
+  style B fill:#00476B,color:#fff
+  style G fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Design the HTTP response around flow variables, not backend object names.</li>
+          <li>Always return a safe fallback queue and error reason.</li>
+          <li>Keep lookup latency low; Flow Designer should not wait on slow CRM operations.</li>
+          <li>Log correlation IDs so failed lookups can be traced from flow to backend.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Flow HTTP Request Node — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://your-api.example.com/api/route-caller
+
+Headers
+Content-Type: application/json
+X-Correlation-Id: {{flowExecutionId}}
+
+Body
+{
+  "accountNumber": "{{FlowVar_AccountNumber}}",
+  "ani": "{{NewPhoneContact.ANI}}",
+  "entryPointId": "{{EntryPointId}}",
+  "language": "{{FlowVar_Language}}"
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">JSON</span><span class="code-label">Flow Response Mapping</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "tier": "Gold",
+  "queue": "priority-queue-id",
+  "name": "Ava Chen",
+  "openCases": 2,
+  "fallbackQueue": "standard-queue-id",
+  "lookupStatus": "matched"
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>Flow variable <code>FlowVar_Tier</code> becomes <code>Gold</code>.</li>
+          <li>Condition node routes Gold callers to priority queue and unmatched callers to fallback queue.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/CiscoDevNet/webex-contact-center-provider-sample-code" target="_blank" rel="noopener">Provider sample code</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-flows" target="_blank" rel="noopener">Webex Contact Center flows</a></li>
+          <li><a href="flow-designer.html">Flow Designer guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Config Playbook -->
+    <div id="config-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">⚙️</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Config Automation — Configuration Management</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Consistent configuration at scale — partner onboarding, admin automation, governance audits.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Admin / Partner Tool] --> B[Config API Client]
+  B --> C[Queues]
+  B --> D[Teams]
+  B --> E[Entry Points]
+  B --> F[CSV / JSON Export]
+  F --> G[Review / Migration / Audit]
+  style B fill:#00476B,color:#fff
+  style G fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Export current configuration before making changes.</li>
+          <li>Use IDs for API calls and names only for human review tables.</li>
+          <li>Validate required fields before bulk-create or bulk-update operations.</li>
+          <li>Produce a dry-run report showing what will be created, updated, or skipped.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Config Export — Queues</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>GET https://webexapis.com/v1/contactCenter/queues?orgId={{orgId}}&amp;max=100
+
+Headers
+Authorization: Bearer {{access_token}}
+Accept: application/json</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Dry-run Change Plan</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "dryRun": true,
+  "source": "queues-desired.csv",
+  "changes": [
+    {
+      "action": "update",
+      "name": "Care Queue",
+      "currentServiceLevel": 80,
+      "targetServiceLevel": 90
+    },
+    {
+      "action": "create",
+      "name": "Premium Support",
+      "targetServiceLevel": 95
+    }
+  ]
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>CSV export lists queue name, channel, service level, and routing metadata.</li>
+          <li>Dry-run plan clearly separates create, update, and skip actions before any write call.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/configuration-samples" target="_blank" rel="noopener">Configuration samples</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/configuration-samples/configuration-extraction-sample" target="_blank" rel="noopener">Configuration extraction sample</a></li>
+          <li><a href="rest-apis.html">REST API guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Desktop API Playbook -->
+    <div id="desktop-api-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🎧</span>
+          <div>
+            <span class="sample-card-level level-advanced">Advanced</span>
+            <h3>Desktop APIs — Agent State &amp; Contact Monitor</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Gives operations teams a controlled way to observe agent/contact state and build supervisor tooling outside the standard desktop.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Service App] --> B[Desktop REST API]
+  A --> C[WebSocket Notifications]
+  C --> D[Agent State Stream]
+  C --> E[Contact Event Stream]
+  D --> F[Supervisor Tool]
+  E --> F
+  style C fill:#00476B,color:#fff
+  style F fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Use REST calls for point-in-time state and WebSocket events for live changes.</li>
+          <li>Track agent ID, session ID, contact ID, and event timestamp together.</li>
+          <li>Do not use monitoring tools to bypass supervisor permissions or business policy.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Desktop API Session</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>GET https://webexapis.com/v1/contactCenter/desktop/agents/{{agentId}}/state
+
+Headers
+Authorization: Bearer {{access_token}}
+Accept: application/json</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Desktop Event Payload</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "type": "agent.state.changed",
+  "agentId": "agent-001",
+  "sessionId": "session-123",
+  "state": "Available",
+  "reasonCode": null,
+  "timestamp": "2026-06-02T09:30:00Z"
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>Supervisor tool updates agent state changes without manual refresh.</li>
+          <li>Contact events can be correlated with queue, agent, and wrap-up outcomes.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/desktop-sample/desktop-api-sample" target="_blank" rel="noopener">Desktop API sample</a></li>
+          <li><a href="desktop-sdk.html">Desktop guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Callback Playbook -->
+    <div id="callback-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">📞</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Callback Automation — Web Form to WxCC Callback</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Reduces queue frustration by letting customers request a callback from a website, CRM case, or mobile app.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Customer Form] --> B[Callback API Service]
+  B --> C[Validate Phone / Consent]
+  C --> D[WxCC Callback Request]
+  D --> E[Queue / Team]
+  E --> F[Agent Calls Back]
+  style B fill:#00476B,color:#fff
+  style F fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Validate phone number, timezone, and consent before creating the request.</li>
+          <li>Map web form intent to the right queue, team, or entry point.</li>
+          <li>Write callback status back to the CRM or customer case.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Create Callback Request — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://webexapis.com/v1/contactCenter/callbacks
+
+Headers
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+Body
+{
+  "orgId": "{{orgId}}",
+  "phoneNumber": "+14155550100",
+  "customerName": "Ava Chen",
+  "queueId": "{{queueId}}",
+  "preferredTime": "2026-06-02T10:30:00Z",
+  "attributes": {
+    "crmCaseId": "CASE-10042",
+    "source": "web-form"
+  }
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>Customer receives confirmation with callback reference.</li>
+          <li>WxCC creates a callback routed to the correct queue.</li>
+          <li>CRM case stores callback ID for follow-up tracking.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/callback-samples" target="_blank" rel="noopener">Callback samples</a></li>
+          <li><a href="rest-apis.html">REST API guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Recording Playbook -->
+    <div id="recording-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🎙️</span>
+          <div>
+            <span class="sample-card-level level-advanced">Advanced</span>
+            <h3>Recording Workflow — QA and Compliance Archive</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Moves recording metadata and availability events into QA, compliance, and audit workflows without manual supervisor effort.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Recording Available Event] --> B[Webhook Listener]
+  B --> C[Recording Metadata API]
+  C --> D[Secure Archive]
+  C --> E[QA Review Queue]
+  D --> F[Audit / Compliance]
+  style B fill:#00476B,color:#fff
+  style F fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Trigger from recording-related events instead of polling aggressively.</li>
+          <li>Store metadata, retention policy, and review status separately from media files.</li>
+          <li>Limit archive access by role and log every retrieval.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Recording Metadata Lookup</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>GET https://webexapis.com/v1/contactCenter/recordings/{{recordingId}}?orgId={{orgId}}
+
+Headers
+Authorization: Bearer {{access_token}}
+Accept: application/json</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">QA Queue Payload</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "recordingId": "rec-10042",
+  "contactId": "task-8421",
+  "agentId": "agent-001",
+  "queueName": "Complaints",
+  "startedAt": "2026-06-02T09:10:00Z",
+  "review": {
+    "reason": "new-recording",
+    "priority": "high"
+  }
+}</code></pre></div>
+        <h4>Expected output</h4>
+        <ul>
+          <li>New recordings appear in QA review with contact, agent, queue, and timestamp metadata.</li>
+          <li>Compliance archive can prove when recording metadata was received and who accessed it.</li>
+        </ul>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/call-recording-samples" target="_blank" rel="noopener">Call recording samples</a></li>
+          <li><a href="webhooks.html">Webhook guide</a></li>
+          <li><a href="reporting.html">Reporting guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Power BI Playbook -->
+    <div id="powerbi-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">📈</span>
+          <div>
+            <span class="sample-card-level level-advanced">Advanced</span>
+            <h3>Power BI Connector — Reporting Dataset Export</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Lets leaders consume WxCC reporting data in the BI tools they already use, with reusable datasets for service reviews and trend analysis.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Power BI Connector] --> B[Service App Token]
+  B --> C[WxCC Search API]
+  C --> D[GraphQL Query]
+  D --> E[Normalized Dataset]
+  E --> F[Power BI Report]
+  style C fill:#00476B,color:#fff
+  style F fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Usage pattern</h4>
+        <ul>
+          <li>Start with a narrow date range and one report model before building broad exports.</li>
+          <li>Map GraphQL results into stable BI columns such as queue, channel, agent, wrap-up, start time, and duration.</li>
+          <li>Schedule refreshes with token renewal and explicit API error handling.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Power BI GraphQL Request — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://webexapis.com/v1/contactCenter/analytics/graphql
+
+Headers
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+Body
+{
+  "query": "query PowerBiContactDataset($from: DateTime!, $to: DateTime!) { contacts(from: $from, to: $to) { id channelType queueName agentName wrapupCode startedAt endedAt totalDuration } }",
+  "variables": {
+    "from": "2026-06-01T00:00:00Z",
+    "to": "2026-06-02T00:00:00Z"
+  }
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Normalized BI Rows</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "rows": [
+    {
+      "ContactId": "task-8421",
+      "Channel": "telephony",
+      "Queue": "Care Queue",
+      "Agent": "Ava Chen",
+      "Wrapup": "Resolved",
+      "StartedAt": "2026-06-01T09:00:00Z",
+      "DurationSeconds": 318
+    }
+  ]
+}</code></pre></div>
+        <h4>Expected screenshot / output</h4>
+        <div class="sample-screenshot-grid">
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Power BI Dataset Preview</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">WxCC Contact Dataset</div>
+              <div class="sample-shot-line"><span>Rows loaded</span><span class="sample-shot-value">12,840</span></div>
+              <div class="sample-shot-line"><span>Queues</span><span class="sample-shot-value">Sales, Care, Billing</span></div>
+              <div class="sample-shot-line"><span>Last refresh</span><span class="sample-shot-value">09:30</span></div>
+            </div>
+          </div>
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Dashboard Output</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Executive Service View</div>
+              <div class="sample-shot-line"><span>SLA</span><span class="sample-shot-value">87.4%</span></div>
+              <div class="sample-shot-line"><span>Abandoned</span><span class="sample-shot-value">3.1%</span></div>
+              <div class="sample-shot-line"><span>Top wrap-up</span><span class="sample-shot-value">Resolved</span></div>
+            </div>
+          </div>
+        </div>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-powerbi-sample" target="_blank" rel="noopener">GraphQL Power BI sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample" target="_blank" rel="noopener">GraphQL search sample</a></li>
+          <li><a href="reporting.html">Reporting guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Click to Call Playbook -->
+    <div id="click-to-call-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">☎️</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Click to Call — Address Book and Call Controls</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Reduces agent handling time by turning CRM contacts, address book entries, and suggested actions into one-click calling controls.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[CRM / Address Book] --> B[Desktop Widget]
+  B --> C[Desktop JS SDK]
+  C --> D[Click to Dial]
+  C --> E[Consult / Transfer]
+  C --> F[Hold / Resume]
+  style B fill:#00476B,color:#fff
+  style D fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Render phone numbers as action buttons inside a Desktop JS SDK widget.</li>
+          <li>Disable call-control buttons when the current contact state does not support that action.</li>
+          <li>Log action intent and outcome so supervisors can troubleshoot failed consult or transfer attempts.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Click-to-Call Action — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://webexapis.com/v1/contactCenter/desktop/agents/{{agentId}}/outdial
+
+Headers
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+Body
+{
+  "destination": "+14155550100",
+  "outdialAni": "{{outdialAni}}",
+  "attributes": {
+    "crmContactId": "crm-1042",
+    "source": "address-book-widget"
+  }
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">State-aware Control Model</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "contactState": "connected",
+  "availableActions": {
+    "hold": true,
+    "resume": false,
+    "consult": true,
+    "transfer": true
+  }
+}</code></pre></div>
+        <h4>Expected screenshot / output</h4>
+        <div class="sample-screenshot-grid">
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Address Book Widget</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Customer Contact</div>
+              <div class="sample-shot-line"><span>Ava Chen</span><span class="sample-shot-value">Call</span></div>
+              <div class="sample-shot-line"><span>Care Queue</span><span class="sample-shot-value">Consult</span></div>
+              <div class="sample-shot-line"><span>Billing SME</span><span class="sample-shot-value">Transfer</span></div>
+            </div>
+          </div>
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Active Contact Controls</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Voice Contact Connected</div>
+              <div class="sample-shot-line"><span>Hold</span><span class="sample-shot-value">Enabled</span></div>
+              <div class="sample-shot-line"><span>Resume</span><span class="sample-shot-value">Disabled</span></div>
+              <div class="sample-shot-line"><span>Transfer</span><span class="sample-shot-value">Enabled</span></div>
+            </div>
+          </div>
+        </div>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/addressbook-widget-sample" target="_blank" rel="noopener">Address book widget sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/desktop-js-sdk-callcontrol-sample" target="_blank" rel="noopener">Desktop call control sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-js-sdk-calling-demo" target="_blank" rel="noopener">Webex JS SDK click-to-call demo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Audio Widget Playbook -->
+    <div id="audio-widget-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🔊</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Audio Widget — Recording and Audio Context Panel</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Gives agents and supervisors audio context without leaving the desktop, useful for QA review, coaching, and compliance workflows.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[Desktop Layout] --> B[Audio Widget]
+  B --> C[Contact / Recording Metadata]
+  C --> D[Playback or Context Panel]
+  D --> E[QA / Coaching Note]
+  style B fill:#00476B,color:#fff
+  style E fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Register the widget in the desktop layout and pass contact identifiers through the widget context.</li>
+          <li>Fetch only metadata in the agent view unless playback is explicitly approved for the role.</li>
+          <li>Mask or avoid sensitive audio access for restricted queues.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Audio Context Lookup</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>GET https://webexapis.com/v1/contactCenter/recordings?orgId={{orgId}}&amp;contactId={{contactId}}
+
+Headers
+Authorization: Bearer {{access_token}}
+Accept: application/json</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Audio Widget Context</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "contactId": "task-8421",
+  "recordingId": "rec-10042",
+  "duration": "04:18",
+  "reviewStatus": "available",
+  "playbackAllowed": false
+}</code></pre></div>
+        <h4>Expected screenshot / output</h4>
+        <div class="sample-screenshot-grid">
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Audio Context Widget</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Recording Available</div>
+              <div class="sample-shot-line"><span>Contact ID</span><span class="sample-shot-value">task-8421</span></div>
+              <div class="sample-shot-line"><span>Duration</span><span class="sample-shot-value">04:18</span></div>
+              <div class="sample-shot-line"><span>Review</span><span class="sample-shot-value">Open</span></div>
+            </div>
+          </div>
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Restricted Queue State</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Playback Protected</div>
+              <div class="sample-shot-line"><span>Role</span><span class="sample-shot-value">Agent</span></div>
+              <div class="sample-shot-line"><span>Playback</span><span class="sample-shot-value">Disabled</span></div>
+              <div class="sample-shot-line"><span>Metadata</span><span class="sample-shot-value">Visible</span></div>
+            </div>
+          </div>
+        </div>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/audio-widget-sample" target="_blank" rel="noopener">Audio widget sample</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/call-recording-samples" target="_blank" rel="noopener">Call recording samples</a></li>
+          <li><a href="desktop-sdk.html">Desktop guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Flow Template Playbook -->
+    <div id="flow-template-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🧩</span>
+          <div>
+            <span class="sample-card-level level-intermediate">Intermediate</span>
+            <h3>Flow Templates — Import, Adapt, and Validate</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Speeds up implementation by starting from proven IVR, routing, callback, and lookup patterns rather than a blank Flow Designer canvas.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[GitHub Flow Template] --> B[Import to Flow Designer]
+  B --> C[Map Entry Point / Queues]
+  C --> D[Map Variables]
+  D --> E[Test Call]
+  E --> F[Publish]
+  style B fill:#00476B,color:#fff
+  style F fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Document every variable the template expects before import.</li>
+          <li>Replace sample queue, entry point, prompt, and connector IDs with tenant-specific values.</li>
+          <li>Run a test call path for success, fallback, timeout, and error handling.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">JSON</span><span class="code-label">Template Adaptation Checklist</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "entryPoint": "replace-with-production-entry-point",
+  "queues": ["priority-queue", "standard-queue", "fallback-queue"],
+  "variables": ["customerTier", "lookupStatus", "preferredLanguage"],
+  "connectors": ["crm-lookup-api", "callback-service"],
+  "testPaths": ["matched-customer", "unknown-customer", "api-timeout"]
+}</code></pre></div>
+        <h4>Expected screenshot / output</h4>
+        <div class="sample-screenshot-grid">
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Flow Designer Canvas</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Flow-Based Routing</div>
+              <div class="sample-shot-line"><span>HTTP Lookup</span><span class="sample-shot-value">Configured</span></div>
+              <div class="sample-shot-line"><span>Condition</span><span class="sample-shot-value">Tier == Gold</span></div>
+              <div class="sample-shot-line"><span>Fallback</span><span class="sample-shot-value">Standard Queue</span></div>
+            </div>
+          </div>
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Variable Mapping</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">HTTP Response Fields</div>
+              <div class="sample-shot-line"><span>$.tier</span><span class="sample-shot-value">FlowVar_Tier</span></div>
+              <div class="sample-shot-line"><span>$.queue</span><span class="sample-shot-value">FlowVar_Queue</span></div>
+              <div class="sample-shot-line"><span>$.status</span><span class="sample-shot-value">FlowVar_Status</span></div>
+            </div>
+          </div>
+        </div>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-flows" target="_blank" rel="noopener">Webex Contact Center flow templates</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/ai-agent-fulfilment-flows" target="_blank" rel="noopener">AI agent fulfilment flows</a></li>
+          <li><a href="flow-designer.html">Flow Designer guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AI Provider Playbook -->
+    <div id="ai-provider-playbook" class="content-section">
+      <div class="playbook">
+        <div class="playbook-header">
+          <span style="font-size:2rem;">🤖</span>
+          <div>
+            <span class="sample-card-level level-advanced">Advanced</span>
+            <h3>AI Provider Integration — BYoVA and Media Services</h3>
+          </div>
+        </div>
+        <p><strong>Business benefit:</strong> Connects WxCC flows to external virtual agents, transcript processors, or media services while keeping call-flow control inside Webex Contact Center.</p>
+        <div class="diagram-wrap" style="margin-bottom:var(--space-md);">
+          <div class="mermaid">
+flowchart LR
+  A[WxCC Flow] --> B[Registered Data Source]
+  B --> C[Provider Runtime]
+  C --> D[Virtual Agent / Transcript / Media Service]
+  D --> C
+  C --> E[Flow Response or Transfer]
+  style C fill:#00476B,color:#fff
+  style E fill:#10b981,color:#fff
+          </div>
+        </div>
+        <h4>Implementation checklist</h4>
+        <ul>
+          <li>Create and approve a Service App with the required provider/data-source scopes.</li>
+          <li>Register the data source and domain that WxCC will call at runtime.</li>
+          <li>Validate runtime tokens/signatures before accepting media or conversation events.</li>
+          <li>Trace every call turn with a correlation ID from flow to provider service.</li>
+        </ul>
+        <div class="code-block"><div class="code-block-header"><span class="code-lang">HTTP</span><span class="code-label">Provider Runtime Event — application/json</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>POST https://provider.example.com/wxcc/virtual-agent/turn
+
+Headers
+Content-Type: application/json
+Authorization: Bearer {{runtime_jwt}}
+X-Correlation-Id: {{flowExecutionId}}
+
+Body
+{
+  "sessionId": "va-session-1042",
+  "input": {
+    "text": "I need help with my bill",
+    "language": "en-US"
+  },
+  "context": {
+    "ani": "+14155550100",
+    "queueId": "{{queueId}}",
+    "customerTier": "Gold"
+  }
+}</code></pre></div>
+        <div class="code-block" style="margin-top:var(--space-md);"><div class="code-block-header"><span class="code-lang">application/json</span><span class="code-label">Provider Response</span><button class="copy-btn">⎘ Copy</button></div>
+        <pre><code>{
+  "action": "continue",
+  "prompt": "I can help with billing. Please confirm the last four digits on the account.",
+  "variables": {
+    "intent": "billing",
+    "confidence": 0.91
+  }
+}</code></pre></div>
+        <h4>Expected screenshot / output</h4>
+        <div class="sample-screenshot-grid">
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Data Source Registration</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Provider Runtime</div>
+              <div class="sample-shot-line"><span>Domain</span><span class="sample-shot-value">verified</span></div>
+              <div class="sample-shot-line"><span>Schema</span><span class="sample-shot-value">BYoVA</span></div>
+              <div class="sample-shot-line"><span>Auth</span><span class="sample-shot-value">Service App</span></div>
+            </div>
+          </div>
+          <div class="sample-screenshot">
+            <div class="sample-shot-bar"><span class="sample-shot-dot"></span><span>Simulator Console</span></div>
+            <div class="sample-shot-body">
+              <div class="sample-shot-title">Conversation Turn</div>
+              <div class="sample-shot-line"><span>Inbound event</span><span class="sample-shot-value">received</span></div>
+              <div class="sample-shot-line"><span>Bot response</span><span class="sample-shot-value">continue</span></div>
+              <div class="sample-shot-line"><span>Trace ID</span><span class="sample-shot-value">cx-1042</span></div>
+            </div>
+          </div>
+        </div>
+        <h4>Source references</h4>
+        <ul>
+          <li><a href="https://github.com/CiscoDevNet/webex-contact-center-provider-sample-code" target="_blank" rel="noopener">Provider sample code</a></li>
+          <li><a href="https://github.com/CiscoDevNet/webex-contact-center-ai-sample-code" target="_blank" rel="noopener">Webex Contact Center AI sample code</a></li>
+          <li><a href="https://github.com/WebexSamples/webex-byods-manager" target="_blank" rel="noopener">BYoDS manager sample</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- What to build next -->
+    <div class="content-section">
+      <div class="section-header"><span class="section-icon">✨</span><h2>What To Build Next</h2></div>
+      <div class="cta-grid">
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Flow Designer</span>
+            <span class="cta-card-title">Flow-Based Routing</span>
+            <span class="cta-card-desc">Use Flow HTTP lookup and response variables to route contacts by customer context, language, or queue logic.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> Flow HTTP Request during IVR lookup.</span>
+            <span><strong>Payload:</strong> ANI, account number, language, current queue.</span>
+            <span><strong>Response:</strong> queueId, priority, tier, reason.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-flows" target="_blank" rel="noopener">Open published flow templates →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Desktop SDK</span>
+            <span class="cta-card-title">Agent Desktop Context</span>
+            <span class="cta-card-desc">Start from task variables, request customer context, and render account actions inside the agent desktop.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> AgentContactOffered desktop event.</span>
+            <span><strong>Payload:</strong> taskId, ANI, CAD variables, CRM record ID.</span>
+            <span><strong>Output:</strong> account summary, case list, guided next action.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/desktop-js-sdk-sample" target="_blank" rel="noopener">Open published desktop SDK sample →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Agent UX</span>
+            <span class="cta-card-title">AI Provider / Agent Assist</span>
+            <span class="cta-card-desc">Combine AI provider intent, suggested response, and next best action with desktop task context.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> transcript, intent, or contact-offered event.</span>
+            <span><strong>Payload:</strong> utterance, customer tier, queue, conversation state.</span>
+            <span><strong>Output:</strong> suggested response, knowledge link, confidence.</span>
+            <a href="https://github.com/CiscoDevNet/webex-contact-center-provider-sample-code" target="_blank" rel="noopener">Open published provider sample →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Webhooks</span>
+            <span class="cta-card-title">Webhook Notifications</span>
+            <span class="cta-card-desc">Subscribe to contact or agent events, verify signatures, and send notifications to email or Webex spaces.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> contact, task, recording, or agent event.</span>
+            <span><strong>Payload:</strong> event ID, resource ID, org ID, event type.</span>
+            <span><strong>Output:</strong> email, Webex space message, ticket, or downstream workflow.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/webhook-email-notify-sample" target="_blank" rel="noopener">Open published webhook sample →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Analytics</span>
+            <span class="cta-card-title">Reporting &amp; BI Export</span>
+            <span class="cta-card-desc">Export CDRs, queue metrics, and agent activity into a refreshable Power BI model.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> nightly export or dashboard refresh.</span>
+            <span><strong>Payload:</strong> date range, report fields, pagination cursor.</span>
+            <span><strong>Output:</strong> fact table, dimensions, service-level dashboard.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-powerbi-sample" target="_blank" rel="noopener">Open published Power BI sample →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">CRM Action</span>
+            <span class="cta-card-title">Desktop Call Controls</span>
+            <span class="cta-card-desc">Trigger outbound calls from CRM records with a JSON payload containing agent, destination, and context.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> CRM contact button or desktop widget action.</span>
+            <span><strong>Payload:</strong> agentId, destination, outdial ANI, CRM context.</span>
+            <span><strong>Output:</strong> outbound task, audit event, CRM activity note.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/desktop-js-sdk-callcontrol-sample" target="_blank" rel="noopener">Open published call-control sample →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Customer Experience</span>
+            <span class="cta-card-title">Callback Automation</span>
+            <span class="cta-card-desc">Offer callback when estimated wait is high, then create the callback request with customer consent data.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> long wait time, after-hours flow, or web form.</span>
+            <span><strong>Payload:</strong> callback number, queue, preferred time, consent.</span>
+            <span><strong>Output:</strong> callback request, CRM status, customer confirmation.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/callback-samples" target="_blank" rel="noopener">Open published callback samples →</a>
+          </div>
+        </details>
+        <details class="cta-card build-next-card">
+          <summary>
+            <span class="cta-card-label">Admin Automation</span>
+            <span class="cta-card-title">Configuration Automation</span>
+            <span class="cta-card-desc">Read queues, teams, sites, users, and skills into baseline JSON before making controlled changes.</span>
+          </summary>
+          <div class="build-next-details">
+            <span><strong>Trigger:</strong> migration readiness, pre-change audit, or scheduled compliance check.</span>
+            <span><strong>Payload:</strong> orgId, site filters, object types, export format.</span>
+            <span><strong>Output:</strong> baseline JSON, delta report, rollback reference.</span>
+            <a href="https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/configuration-samples" target="_blank" rel="noopener">Open published configuration samples →</a>
+          </div>
+        </details>
+      </div>
+    </div>
+
+  </article>
+
+  <aside class="related-sidebar">
+    <div class="related-card">
+      <div class="related-card-title">Start Here</div>
+      <ul class="related-links">
+        <li><a href="getting-started.html">🔑 Get Started</a></li>
+        <li><a href="rest-apis.html">🔌 REST APIs</a></li>
+      </ul>
+    </div>
+    <div class="related-card">
+      <div class="related-card-title">More</div>
+      <ul class="related-links">
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="https://github.com/WebexSamples/webex-contact-center-api-samples" target="_blank" rel="noopener">GitHub Samples ↗</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer class="page-footer">
+  <div class="page-footer-inner">
+    <div class="nav-prev"><span class="nav-pn-label">← Previous</span><a href="reporting.html" class="nav-pn-link">📊 Reporting</a></div>
+    <div class="nav-next"><span class="nav-pn-label">Next →</span><a href="faq.html" class="nav-pn-link">❓ FAQ</a></div>
+  </div>
+  <div class="site-footer-meta"><span>© 2026 WxCC Dev Corner · Curated Webex Contact Center solution guide</span><a href="index.html">Home</a> <a href="faq.html">FAQ</a></div>
+</footer>
+<button class="back-to-top" title="Back to top">↑</button>
+<script src="js/main.js?v=clickable-cards-1"></script>
+<script src="js/samples-refresh.js?v=1"></script>
+</body>
+</html>
