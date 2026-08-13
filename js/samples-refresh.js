@@ -43,3 +43,30 @@ async function loadSamplesRefreshStatus() {
 
 document.getElementById("samplesRefreshBtn")?.addEventListener("click", loadSamplesRefreshStatus);
 loadSamplesRefreshStatus();
+
+// Auto-expire "New" badges on auto-added sample cards
+// scripts/scan.mjs stamps every AI-generated card with data-added="YYYY-MM-DD"
+// and a permanent .new-badge span — permanent because it's written once into
+// samples.html at scan time and never touched again. This runs on every page
+// load/refresh and hides the badge once a card is older than the cutoff, so
+// "New" actually means new instead of "was new at some point in the past."
+const NEW_BADGE_MAX_AGE_DAYS = 14;
+
+function expireSampleNewBadges() {
+  const cutoffMs = NEW_BADGE_MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+
+  document.querySelectorAll(".sample-card[data-added]").forEach((card) => {
+    const addedDate = new Date(card.getAttribute("data-added"));
+    if (isNaN(addedDate.getTime())) return;
+
+    const badge = card.querySelector(".new-badge");
+    if (!badge) return;
+
+    if (now - addedDate.getTime() > cutoffMs) {
+      badge.remove();
+    }
+  });
+}
+
+expireSampleNewBadges();
