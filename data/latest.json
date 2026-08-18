@@ -1,34 +1,66 @@
 {
-  "generatedAt": "2026-08-17T23:13:32.746Z",
-  "date": "2026-08-18",
+  "generatedAt": "2026-08-18T23:13:06.346Z",
+  "date": "2026-08-19",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-08-17T23:13:32.746Z",
-  "lastScanAt": "2026-08-17T23:13:32.746Z",
-  "newThisRun": 1,
+  "firstScanAt": "2026-08-18T23:13:06.346Z",
+  "lastScanAt": "2026-08-18T23:13:06.346Z",
+  "newThisRun": 3,
   "summary": {
     "newRepos": 0,
-    "updatedTrackedRepos": 1,
+    "updatedTrackedRepos": 3,
     "newDiscoveryItems": 0
   },
   "changes": [
     {
       "type": "tracked-repo-updated",
-      "title": "a2aproject/A2A",
-      "source": "https://github.com/a2aproject/A2A",
-      "category": "MCP",
-      "detectedAt": "2026-08-17T23:13:32.746Z",
-      "detail": "Repository pushed date changed from 2026-08-15T15:41:01Z to 2026-08-17T21:13:46Z."
-    }
-  ],
-  "runChanges": [
+      "title": "WebexSamples/webex-contact-center-flows",
+      "source": "https://github.com/WebexSamples/webex-contact-center-flows",
+      "category": "Flow Designer",
+      "detectedAt": "2026-08-18T23:13:06.346Z",
+      "detail": "Repository pushed date changed from 2026-06-15T03:29:06Z to 2026-08-18T21:52:58Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "modelcontextprotocol/servers",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "category": "Tracked Repo",
+      "detectedAt": "2026-08-18T23:13:06.346Z",
+      "detail": "Repository pushed date changed from 2026-08-10T02:41:59Z to 2026-08-18T16:04:56Z."
+    },
     {
       "type": "tracked-repo-updated",
       "title": "a2aproject/A2A",
       "source": "https://github.com/a2aproject/A2A",
       "category": "MCP",
-      "detectedAt": "2026-08-17T23:13:32.746Z",
-      "detail": "Repository pushed date changed from 2026-08-15T15:41:01Z to 2026-08-17T21:13:46Z."
+      "detectedAt": "2026-08-18T23:13:06.346Z",
+      "detail": "Repository pushed date changed from 2026-08-17T21:13:46Z to 2026-08-18T17:09:57Z."
+    }
+  ],
+  "runChanges": [
+    {
+      "type": "tracked-repo-updated",
+      "title": "WebexSamples/webex-contact-center-flows",
+      "source": "https://github.com/WebexSamples/webex-contact-center-flows",
+      "category": "Flow Designer",
+      "detectedAt": "2026-08-18T23:13:06.346Z",
+      "detail": "Repository pushed date changed from 2026-06-15T03:29:06Z to 2026-08-18T21:52:58Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "modelcontextprotocol/servers",
+      "source": "https://github.com/modelcontextprotocol/servers",
+      "category": "Tracked Repo",
+      "detectedAt": "2026-08-18T23:13:06.346Z",
+      "detail": "Repository pushed date changed from 2026-08-10T02:41:59Z to 2026-08-18T16:04:56Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-08-18T23:13:06.346Z",
+      "detail": "Repository pushed date changed from 2026-08-17T21:13:46Z to 2026-08-18T17:09:57Z."
     }
   ],
   "scanErrors": [],
@@ -105,7 +137,7 @@
       "owner": "WebexSamples",
       "description": "Official Repository for Sample Webex Contact Center Flow Templates that are usable on Flow Designer",
       "url": "https://github.com/WebexSamples/webex-contact-center-flows",
-      "pushedAt": "2026-06-15T03:29:06Z",
+      "pushedAt": "2026-08-18T21:52:58Z",
       "updatedAt": "2026-07-07T11:41:09Z",
       "stars": 3,
       "forks": 1,
@@ -341,10 +373,10 @@
       "owner": "modelcontextprotocol",
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
-      "pushedAt": "2026-08-10T02:41:59Z",
-      "updatedAt": "2026-08-17T22:47:45Z",
-      "stars": 89639,
-      "forks": 11470,
+      "pushedAt": "2026-08-18T16:04:56Z",
+      "updatedAt": "2026-08-18T23:09:28Z",
+      "stars": 89668,
+      "forks": 11474,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -400,10 +432,10 @@
       "owner": "a2aproject",
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
-      "pushedAt": "2026-08-17T21:13:46Z",
-      "updatedAt": "2026-08-17T22:12:17Z",
-      "stars": 25380,
-      "forks": 2569,
+      "pushedAt": "2026-08-18T17:09:57Z",
+      "updatedAt": "2026-08-18T22:43:37Z",
+      "stars": 25401,
+      "forks": 2570,
       "language": "Shell",
       "topics": [
         "a2a",
