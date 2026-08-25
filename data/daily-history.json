@@ -1317,6 +1317,30 @@
           "detail": "Repository pushed date changed from 2026-08-21T19:46:58Z to 2026-08-24T20:57:49Z."
         }
       ]
+    },
+    "2026-08-26": {
+      "date": "2026-08-26",
+      "firstScanAt": "2026-08-25T23:16:55.760Z",
+      "lastScanAt": "2026-08-25T23:16:55.760Z",
+      "scanCount": 1,
+      "changes": [
+        {
+          "type": "tracked-repo-updated",
+          "title": "WebexSamples/webex-contact-center-api-samples",
+          "source": "https://github.com/WebexSamples/webex-contact-center-api-samples",
+          "category": "Tracked Repo",
+          "detectedAt": "2026-08-25T23:16:55.760Z",
+          "detail": "Repository pushed date changed from 2026-08-24T18:49:55Z to 2026-08-25T07:14:37Z."
+        },
+        {
+          "type": "tracked-repo-updated",
+          "title": "a2aproject/A2A",
+          "source": "https://github.com/a2aproject/A2A",
+          "category": "MCP",
+          "detectedAt": "2026-08-25T23:16:55.760Z",
+          "detail": "Repository pushed date changed from 2026-08-24T20:57:49Z to 2026-08-25T16:28:14Z."
+        }
+      ]
     }
   }
 }
