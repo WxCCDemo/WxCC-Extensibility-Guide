@@ -1,52 +1,18 @@
 {
-  "generatedAt": "2026-08-25T23:16:55.760Z",
-  "date": "2026-08-26",
+  "generatedAt": "2026-08-27T04:08:51.852Z",
+  "date": "2026-08-27",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-08-25T23:16:55.760Z",
-  "lastScanAt": "2026-08-25T23:16:55.760Z",
-  "newThisRun": 2,
+  "firstScanAt": "2026-08-27T04:08:51.852Z",
+  "lastScanAt": "2026-08-27T04:08:51.852Z",
+  "newThisRun": 0,
   "summary": {
     "newRepos": 0,
-    "updatedTrackedRepos": 2,
+    "updatedTrackedRepos": 0,
     "newDiscoveryItems": 0
   },
-  "changes": [
-    {
-      "type": "tracked-repo-updated",
-      "title": "WebexSamples/webex-contact-center-api-samples",
-      "source": "https://github.com/WebexSamples/webex-contact-center-api-samples",
-      "category": "Tracked Repo",
-      "detectedAt": "2026-08-25T23:16:55.760Z",
-      "detail": "Repository pushed date changed from 2026-08-24T18:49:55Z to 2026-08-25T07:14:37Z."
-    },
-    {
-      "type": "tracked-repo-updated",
-      "title": "a2aproject/A2A",
-      "source": "https://github.com/a2aproject/A2A",
-      "category": "MCP",
-      "detectedAt": "2026-08-25T23:16:55.760Z",
-      "detail": "Repository pushed date changed from 2026-08-24T20:57:49Z to 2026-08-25T16:28:14Z."
-    }
-  ],
-  "runChanges": [
-    {
-      "type": "tracked-repo-updated",
-      "title": "WebexSamples/webex-contact-center-api-samples",
-      "source": "https://github.com/WebexSamples/webex-contact-center-api-samples",
-      "category": "Tracked Repo",
-      "detectedAt": "2026-08-25T23:16:55.760Z",
-      "detail": "Repository pushed date changed from 2026-08-24T18:49:55Z to 2026-08-25T07:14:37Z."
-    },
-    {
-      "type": "tracked-repo-updated",
-      "title": "a2aproject/A2A",
-      "source": "https://github.com/a2aproject/A2A",
-      "category": "MCP",
-      "detectedAt": "2026-08-25T23:16:55.760Z",
-      "detail": "Repository pushed date changed from 2026-08-24T20:57:49Z to 2026-08-25T16:28:14Z."
-    }
-  ],
+  "changes": [],
+  "runChanges": [],
   "scanErrors": [],
   "trackedRepos": [
     {
@@ -358,9 +324,9 @@
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
       "pushedAt": "2026-08-20T01:12:36Z",
-      "updatedAt": "2026-08-25T22:36:27Z",
-      "stars": 89861,
-      "forks": 11510,
+      "updatedAt": "2026-08-27T03:34:54Z",
+      "stars": 89895,
+      "forks": 11514,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -417,9 +383,9 @@
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
       "pushedAt": "2026-08-25T16:28:14Z",
-      "updatedAt": "2026-08-25T20:47:41Z",
-      "stars": 25491,
-      "forks": 2585,
+      "updatedAt": "2026-08-27T03:24:52Z",
+      "stars": 25509,
+      "forks": 2588,
       "language": "Shell",
       "topics": [
         "a2a",
@@ -491,8 +457,8 @@
           "owner": "api-evangelist",
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-08-25T01:49:38Z",
-          "updatedAt": "2026-08-25T01:50:00Z",
+          "pushedAt": "2026-08-26T14:03:18Z",
+          "updatedAt": "2026-08-26T14:23:58Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -564,8 +530,8 @@
           "owner": "api-evangelist",
           "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-08-25T01:49:38Z",
-          "updatedAt": "2026-08-25T01:50:00Z",
+          "pushedAt": "2026-08-26T14:03:18Z",
+          "updatedAt": "2026-08-26T14:23:58Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
