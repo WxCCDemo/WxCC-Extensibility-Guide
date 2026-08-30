@@ -1,52 +1,18 @@
 {
-  "generatedAt": "2026-08-29T03:58:06.177Z",
-  "date": "2026-08-29",
+  "generatedAt": "2026-08-30T00:54:38.864Z",
+  "date": "2026-08-30",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-08-29T03:58:06.177Z",
-  "lastScanAt": "2026-08-29T03:58:06.177Z",
-  "newThisRun": 2,
+  "firstScanAt": "2026-08-30T00:54:38.864Z",
+  "lastScanAt": "2026-08-30T00:54:38.864Z",
+  "newThisRun": 0,
   "summary": {
     "newRepos": 0,
-    "updatedTrackedRepos": 2,
+    "updatedTrackedRepos": 0,
     "newDiscoveryItems": 0
   },
-  "changes": [
-    {
-      "type": "tracked-repo-updated",
-      "title": "modelcontextprotocol/servers",
-      "source": "https://github.com/modelcontextprotocol/servers",
-      "category": "Tracked Repo",
-      "detectedAt": "2026-08-29T03:58:06.177Z",
-      "detail": "Repository pushed date changed from 2026-08-28T02:36:45Z to 2026-08-28T17:58:20Z."
-    },
-    {
-      "type": "tracked-repo-updated",
-      "title": "a2aproject/A2A",
-      "source": "https://github.com/a2aproject/A2A",
-      "category": "MCP",
-      "detectedAt": "2026-08-29T03:58:06.177Z",
-      "detail": "Repository pushed date changed from 2026-08-25T16:28:14Z to 2026-08-28T13:20:05Z."
-    }
-  ],
-  "runChanges": [
-    {
-      "type": "tracked-repo-updated",
-      "title": "modelcontextprotocol/servers",
-      "source": "https://github.com/modelcontextprotocol/servers",
-      "category": "Tracked Repo",
-      "detectedAt": "2026-08-29T03:58:06.177Z",
-      "detail": "Repository pushed date changed from 2026-08-28T02:36:45Z to 2026-08-28T17:58:20Z."
-    },
-    {
-      "type": "tracked-repo-updated",
-      "title": "a2aproject/A2A",
-      "source": "https://github.com/a2aproject/A2A",
-      "category": "MCP",
-      "detectedAt": "2026-08-29T03:58:06.177Z",
-      "detail": "Repository pushed date changed from 2026-08-25T16:28:14Z to 2026-08-28T13:20:05Z."
-    }
-  ],
+  "changes": [],
+  "runChanges": [],
   "scanErrors": [],
   "trackedRepos": [
     {
@@ -358,9 +324,9 @@
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
       "pushedAt": "2026-08-28T17:58:20Z",
-      "updatedAt": "2026-08-29T02:13:39Z",
-      "stars": 89940,
-      "forks": 11523,
+      "updatedAt": "2026-08-30T00:40:01Z",
+      "stars": 89962,
+      "forks": 11533,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -417,9 +383,9 @@
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
       "pushedAt": "2026-08-28T13:20:05Z",
-      "updatedAt": "2026-08-29T01:46:22Z",
-      "stars": 25532,
-      "forks": 2590,
+      "updatedAt": "2026-08-30T00:42:51Z",
+      "stars": 25546,
+      "forks": 2592,
       "language": "Shell",
       "topics": [
         "a2a",
@@ -489,10 +455,10 @@
           "fullName": "api-evangelist/webex",
           "name": "webex",
           "owner": "api-evangelist",
-          "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
+          "description": "Webex — independent third-party profile of a public API surface, by API Evangelist. Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs,",
           "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-08-28T20:53:29Z",
-          "updatedAt": "2026-08-28T20:53:36Z",
+          "pushedAt": "2026-08-29T22:27:21Z",
+          "updatedAt": "2026-08-29T22:27:29Z",
           "stars": 0,
           "forks": 0,
           "language": "Unknown",
@@ -506,8 +472,7 @@
             "video-conferencing"
           ],
           "categories": [
-            "REST API",
-            "Webhook"
+            "REST API"
           ],
           "readme": {
             "url": "https://github.com/api-evangelist/webex/blob/main/README.md",
@@ -556,72 +521,7 @@
     },
     {
       "query": "webex contact center webhook integration",
-      "items": [
-        {
-          "id": 928641586,
-          "fullName": "api-evangelist/webex",
-          "name": "webex",
-          "owner": "api-evangelist",
-          "description": "Cisco Webex is a comprehensive collaboration platform offering APIs for messaging, meetings, calling, devices, and contact center workflows. The Webex Developer Platform enables developers to build integrations, bots, embedded apps, and automations using REST APIs, SDKs, and webhooks.",
-          "url": "https://github.com/api-evangelist/webex",
-          "pushedAt": "2026-08-28T20:53:29Z",
-          "updatedAt": "2026-08-28T20:53:36Z",
-          "stars": 0,
-          "forks": 0,
-          "language": "Unknown",
-          "topics": [
-            "apis-json",
-            "calling",
-            "collaboration",
-            "communication",
-            "enterprise",
-            "messaging",
-            "video-conferencing"
-          ],
-          "categories": [
-            "REST API",
-            "Webhook"
-          ],
-          "readme": {
-            "url": "https://github.com/api-evangelist/webex/blob/main/README.md",
-            "excerpt": "Webex (webex) <!-- API-EVANGELIST-PROVENANCE:BEGIN -- About this repository This is not our API. This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist. API Evangelist does not operate, host, resell, or support this company's APIs, and is not affiliated with or endorsed by the company unless stated on the profile. Where the information came from. Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json , llms.txt...",
-            "highlights": [
-              "Webex (webex) <!-- API-EVANGELIST-PROVENANCE:BEGIN -- About this repository This is not our API.",
-              "This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist.",
-              "API Evangelist does not operate, host, resell, or support this company's APIs, and is not affiliated with or endorsed by the company unless stated on the profile.",
-              "Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json , llms.txt and similar), its public repositories, and its public status, pricing and changelog pages."
-            ],
-            "sections": [
-              {
-                "title": "Webex (webex)",
-                "bullets": [
-                  "<!-- API-EVANGELIST-PROVENANCE:BEGIN -->",
-                  "> This is not our API. This repository is an independent, third-party profile of a company's",
-                  "> publicly available API surface, maintained by API Evangelist.",
-                  "> API Evangelist does not operate, host, resell, or support this company's APIs, and is not"
-                ]
-              },
-              {
-                "title": "Scope",
-                "bullets": [
-                  "Type: Index",
-                  "Position: Consumer",
-                  "Access: 3rd-Party"
-                ]
-              },
-              {
-                "title": "Tags",
-                "bullets": [
-                  "Calling",
-                  "Collaboration",
-                  "Communication",
-                  "Enterprise"
-                ]
-              }
-            ]
-          }
-        }
-      ]
+      "items": []
     },
     {
       "query": "webex contact center desktop SDK widget",
