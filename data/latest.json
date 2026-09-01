@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-31T01:00:17.582Z",
-  "date": "2026-08-31",
+  "generatedAt": "2026-09-01T01:30:56.360Z",
+  "date": "2026-09-01",
   "mode": "daily",
   "scanCount": 1,
-  "firstScanAt": "2026-08-31T01:00:17.582Z",
-  "lastScanAt": "2026-08-31T01:00:17.582Z",
-  "newThisRun": 1,
+  "firstScanAt": "2026-09-01T01:30:56.360Z",
+  "lastScanAt": "2026-09-01T01:30:56.360Z",
+  "newThisRun": 2,
   "summary": {
     "newRepos": 0,
-    "updatedTrackedRepos": 1,
+    "updatedTrackedRepos": 2,
     "newDiscoveryItems": 0
   },
   "changes": [
@@ -17,8 +17,16 @@
       "title": "modelcontextprotocol/servers",
       "source": "https://github.com/modelcontextprotocol/servers",
       "category": "Tracked Repo",
-      "detectedAt": "2026-08-31T01:00:17.582Z",
-      "detail": "Repository pushed date changed from 2026-08-28T17:58:20Z to 2026-08-30T21:43:38Z."
+      "detectedAt": "2026-09-01T01:30:56.360Z",
+      "detail": "Repository pushed date changed from 2026-08-30T21:43:38Z to 2026-08-31T18:37:08Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-09-01T01:30:56.360Z",
+      "detail": "Repository pushed date changed from 2026-08-28T13:20:05Z to 2026-09-01T00:15:09Z."
     }
   ],
   "runChanges": [
@@ -27,8 +35,16 @@
       "title": "modelcontextprotocol/servers",
       "source": "https://github.com/modelcontextprotocol/servers",
       "category": "Tracked Repo",
-      "detectedAt": "2026-08-31T01:00:17.582Z",
-      "detail": "Repository pushed date changed from 2026-08-28T17:58:20Z to 2026-08-30T21:43:38Z."
+      "detectedAt": "2026-09-01T01:30:56.360Z",
+      "detail": "Repository pushed date changed from 2026-08-30T21:43:38Z to 2026-08-31T18:37:08Z."
+    },
+    {
+      "type": "tracked-repo-updated",
+      "title": "a2aproject/A2A",
+      "source": "https://github.com/a2aproject/A2A",
+      "category": "MCP",
+      "detectedAt": "2026-09-01T01:30:56.360Z",
+      "detail": "Repository pushed date changed from 2026-08-28T13:20:05Z to 2026-09-01T00:15:09Z."
     }
   ],
   "scanErrors": [],
@@ -341,10 +357,10 @@
       "owner": "modelcontextprotocol",
       "description": "Model Context Protocol Servers",
       "url": "https://github.com/modelcontextprotocol/servers",
-      "pushedAt": "2026-08-30T21:43:38Z",
-      "updatedAt": "2026-08-31T00:42:03Z",
-      "stars": 89977,
-      "forks": 11539,
+      "pushedAt": "2026-08-31T18:37:08Z",
+      "updatedAt": "2026-09-01T00:13:50Z",
+      "stars": 89992,
+      "forks": 11537,
       "language": "TypeScript",
       "topics": [],
       "categories": [],
@@ -381,7 +397,7 @@
             "bullets": [
               "The following reference servers are now archived and can be found at servers-archived.",
               "AWS KB Retrieval - Retrieval from AWS Knowledge Base using Bedrock Agent Runtime.",
-              "Brave Search - Web and local search using Brave's Search API. Has been replaced by the official server.",
+              "Brave Search - Web and local search using Brave's Search API. Has been replaced by the official server (@brave/brave-search-mcp-server).",
               "EverArt - AI image generation using various models."
             ]
           }
@@ -400,10 +416,10 @@
       "owner": "a2aproject",
       "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
       "url": "https://github.com/a2aproject/A2A",
-      "pushedAt": "2026-08-28T13:20:05Z",
-      "updatedAt": "2026-08-31T00:56:46Z",
-      "stars": 25556,
-      "forks": 2593,
+      "pushedAt": "2026-09-01T00:15:09Z",
+      "updatedAt": "2026-09-01T00:54:03Z",
+      "stars": 25570,
+      "forks": 2595,
       "language": "Shell",
       "topics": [
         "a2a",
